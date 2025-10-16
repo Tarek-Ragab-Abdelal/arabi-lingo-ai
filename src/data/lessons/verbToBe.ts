@@ -8,6 +8,7 @@ export const verbToBeLesson: Lesson = {
   descriptionAr: "تعلم تصريف فعل 'يكون' في الحاضر والماضي مع الأمثلة",
   icon: "Check",
   color: "accent",
+  level: 2,
   items: [
     {
       english: "I am",

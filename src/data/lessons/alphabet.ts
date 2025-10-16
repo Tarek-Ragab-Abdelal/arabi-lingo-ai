@@ -8,6 +8,7 @@ export const alphabetLesson: Lesson = {
   descriptionAr: "تعلم الحروف الإنجليزية الكبيرة والصغيرة مع النطق الصحيح",
   icon: "BookA",
   color: "primary",
+  level: 1,
   items: [
     { english: "A, a", arabic: "إيه", transliteration: "ay" },
     { english: "B, b", arabic: "بي", transliteration: "bee" },

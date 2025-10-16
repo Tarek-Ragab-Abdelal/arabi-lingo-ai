@@ -8,6 +8,7 @@ export const colorsLesson: Lesson = {
   descriptionAr: "تعلم أسماء الألوان باللغة الإنجليزية",
   icon: "Palette",
   color: "warning",
+  level: 1,
   items: [
     { english: "Red", arabic: "أحمر", transliteration: "red" },
     { english: "Blue", arabic: "أزرق", transliteration: "bloo" },

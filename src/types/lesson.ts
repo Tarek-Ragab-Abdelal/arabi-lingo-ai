@@ -27,6 +27,7 @@ export interface Lesson {
   descriptionAr: string;
   icon: string;
   color: string;
+  level: number; // 1-5 (beginner to advanced)
   items: LessonItem[];
   quizzes?: Quiz[];
 }

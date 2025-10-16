@@ -8,6 +8,7 @@ export const pronounsLesson: Lesson = {
   descriptionAr: "تعلم الضمائر الشخصية في اللغة الإنجليزية واستخداماتها",
   icon: "Users",
   color: "secondary",
+  level: 1,
   items: [
     {
       english: "I",

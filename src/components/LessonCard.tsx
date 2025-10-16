@@ -1,7 +1,23 @@
 import { Link } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { BookA, Users, Check, Palette, LucideIcon } from "lucide-react";
+import { 
+  BookA, 
+  Users, 
+  Check, 
+  Palette, 
+  MessageCircle, 
+  Hash, 
+  Calendar, 
+  Zap, 
+  HelpCircle, 
+  Plane, 
+  MapPin, 
+  Navigation, 
+  Briefcase, 
+  Shield, 
+  LucideIcon 
+} from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const iconMap: Record<string, LucideIcon> = {
@@ -9,6 +25,16 @@ const iconMap: Record<string, LucideIcon> = {
   Users,
   Check,
   Palette,
+  MessageCircle,
+  Hash,
+  Calendar,
+  Zap,
+  HelpCircle,
+  Plane,
+  MapPin,
+  Navigation,
+  Briefcase,
+  Shield,
 };
 
 interface LessonCardProps {
