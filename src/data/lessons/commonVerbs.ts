@@ -8,7 +8,7 @@ export const commonVerbsLesson: Lesson = {
   descriptionAr: "تعلم الأفعال الأكثر استخداما في الحياة اليومية",
   icon: "Zap",
   color: "warning",
-  level: 2,
+  level: 3,
   items: [
     { english: "Go", arabic: "يذهب", transliteration: "goh", exampleSentence: { en: "I go to school every day", ar: "أذهب إلى المدرسة كل يوم" } },
     { english: "Come", arabic: "يأتي", transliteration: "kum", exampleSentence: { en: "Please come here", ar: "من فضلك تعال هنا" } },

@@ -38,3 +38,35 @@ export interface UserProgress {
   quizScore?: number;
   lastAccessed: string;
 }
+
+// Training Section Types
+export interface TrainingParagraph {
+  id: string;
+  titleAr: string;
+  titleEn: string;
+  level: number; // 1-5 (beginner to advanced)
+  englishText: string;
+  arabicTranslation: string;
+  transliteration?: string;
+  audioUrlMale?: string;
+  audioUrlFemale?: string;
+  category: 'daily' | 'descriptive' | 'dialogue' | 'workplace' | 'travel';
+  quizzes: TrainingQuiz[];
+}
+
+export interface TrainingQuiz {
+  id: string;
+  questionAr: string;
+  questionEn: string;
+  options: string[];
+  correctAnswer: string;
+  explanation?: string;
+}
+
+export interface TrainingProgress {
+  paragraphId: string;
+  completed: boolean;
+  quizScore?: number;
+  lastAccessed: string;
+  timeSpent?: number; // in seconds
+}

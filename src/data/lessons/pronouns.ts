@@ -8,7 +8,7 @@ export const pronounsLesson: Lesson = {
   descriptionAr: "تعلم الضمائر الشخصية في اللغة الإنجليزية واستخداماتها",
   icon: "Users",
   color: "secondary",
-  level: 1,
+  level: 2,
   items: [
     {
       english: "I",
@@ -73,6 +73,24 @@ export const pronounsLesson: Lesson = {
         ar: "هم أصدقاء",
       },
     },
+    {
+      english: "They (at school)",
+      arabic: "هم (في المدرسة)",
+      transliteration: "thay at skool",
+      exampleSentence: {
+        en: "They are at the school",
+        ar: "هم في المدرسة",
+      },
+    },
+    {
+      english: "It (raining)",
+      arabic: "إنها (تمطر)",
+      transliteration: "it rayning",
+      exampleSentence: {
+        en: "It is raining",
+        ar: "إنها تمطر",
+      },
+    },
   ],
   quizzes: [
     {
@@ -98,6 +116,20 @@ export const pronounsLesson: Lesson = {
       questionAr: "ما هو الضمير 'نحن' بالإنجليزية؟",
       options: ["We", "They", "You", "I"],
       correctAnswer: "We",
+    },
+    {
+      id: "q5",
+      questionAr: "اختر الضمير المناسب: '__ am happy'",
+      options: ["I", "You", "He", "They"],
+      correctAnswer: "I",
+      explanation: "الضمير 'I' هو الوحيد الذي يُستخدم مع فعل 'am'"
+    },
+    {
+      id: "q6",
+      questionAr: "ما هو الضمير المناسب لـ 'مجموعة من الطلاب'؟",
+      options: ["They", "It", "He", "She"],
+      correctAnswer: "They",
+      explanation: "نستخدم 'They' للإشارة إلى مجموعة من الأشخاص"
     },
   ],
 };

@@ -23,6 +23,8 @@ export const colorsLesson: Lesson = {
     { english: "Gray", arabic: "رمادي", transliteration: "gray" },
     { english: "Gold", arabic: "ذهبي", transliteration: "gold" },
     { english: "Silver", arabic: "فضي", transliteration: "sil-ver" },
+    { english: "Light blue", arabic: "أزرق فاتح", transliteration: "layt bloo", exampleSentence: { en: "The sky is light blue", ar: "السماء زرقاء فاتحة" } },
+    { english: "Dark green", arabic: "أخضر غامق", transliteration: "dark green", exampleSentence: { en: "The tree is dark green", ar: "الشجرة خضراء غامقة" } },
   ],
   quizzes: [
     {
@@ -48,6 +50,13 @@ export const colorsLesson: Lesson = {
       questionAr: "ما هو اللون 'بنفسجي' بالإنجليزية؟",
       options: ["Purple", "Pink", "Orange", "Yellow"],
       correctAnswer: "Purple",
+    },
+    {
+      id: "q5",
+      questionAr: "كيف تقول 'أزرق فاتح' بالإنجليزية؟",
+      options: ["Light blue", "Dark blue", "Blue light", "Sky blue"],
+      correctAnswer: "Light blue",
+      explanation: "نستخدم 'Light' للألوان الفاتحة و 'Dark' للألوان الغامقة"
     },
   ],
 };

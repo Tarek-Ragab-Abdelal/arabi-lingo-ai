@@ -24,10 +24,15 @@ export const greetingsLesson: Lesson = {
     { english: "Please", arabic: "من فضلك", transliteration: "pleez" },
     { english: "Excuse me", arabic: "عفوا", transliteration: "eks-kyooz mee" },
     { english: "I'm sorry", arabic: "أنا آسف", transliteration: "aym sor-ee" },
+    { english: "Nice to meet you", arabic: "سررت بلقائك", transliteration: "nays too meet yoo" },
+    { english: "Welcome", arabic: "أهلاً وسهلاً", transliteration: "wel-kum" },
+    { english: "What's your name?", arabic: "ما اسمك؟", transliteration: "whats yor naym" },
   ],
   quizzes: [
     { id: "q1", questionAr: "كيف تقول 'مرحبا' بالإنجليزية؟", options: ["Hello", "Goodbye", "Thank you", "Sorry"], correctAnswer: "Hello" },
     { id: "q2", questionAr: "ما معنى 'How are you?'؟", options: ["كيف حالك؟", "شكرا لك", "وداعا", "مرحبا"], correctAnswer: "كيف حالك؟" },
     { id: "q3", questionAr: "كيف تقول 'شكرا لك' بالإنجليزية؟", options: ["Thank you", "Please", "Sorry", "Hello"], correctAnswer: "Thank you" },
+    { id: "q4", questionAr: "ما معنى 'Nice to meet you'؟", options: ["سررت بلقائك", "أهلاً وسهلاً", "وداعاً", "مع السلامة"], correctAnswer: "سررت بلقائك" },
+    { id: "q5", questionAr: "كيف تسأل عن اسم شخص بالإنجليزية؟", options: ["What's your name?", "How are you?", "Where are you?", "Who are you?"], correctAnswer: "What's your name?" },
   ],
 };
