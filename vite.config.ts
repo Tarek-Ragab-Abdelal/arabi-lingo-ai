@@ -17,4 +17,8 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  define: {
+    // Make BASE_URL available in the client
+    'import.meta.env.BASE_URL': JSON.stringify(process.env.BASE_URL || "/"),
+  },
 }));
