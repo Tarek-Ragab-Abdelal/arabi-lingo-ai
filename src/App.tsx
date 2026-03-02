@@ -12,6 +12,7 @@ import LessonPage from "./pages/LessonPage";
 import QuizPage from "./pages/QuizPage";
 import NotFound from "./pages/NotFound";
 import OnboardingDialog from "./components/OnboardingDialog";
+import Footer from "./components/Footer";
 import { useUserProfile } from "./hooks/useUserProfile";
 
 const queryClient = new QueryClient();
@@ -39,6 +40,7 @@ const AppContent = () => {
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );
