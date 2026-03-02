@@ -11,17 +11,22 @@ import TrainingExercisePage from "./pages/TrainingExercisePage";
 import LessonPage from "./pages/LessonPage";
 import QuizPage from "./pages/QuizPage";
 import NotFound from "./pages/NotFound";
+import OnboardingDialog from "./components/OnboardingDialog";
+import { useUserProfile } from "./hooks/useUserProfile";
 
 const queryClient = new QueryClient();
 
 // Get the base path from the build environment
 const basename = import.meta.env.BASE_URL || "/";
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
+const AppContent = () => {
+  const { profile, isLoaded, saveProfile } = useUserProfile();
+
+  if (!isLoaded) return null;
+
+  return (
+    <>
+      {!profile && <OnboardingDialog onComplete={saveProfile} />}
       <BrowserRouter basename={basename}>
         <Routes>
           <Route path="/" element={<WelcomePage />} />
@@ -35,8 +40,19 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
+    </>
+  );
+};
+
+const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <TooltipProvider>
+      <Toaster />
+      <Sonner />
+      <AppContent />
     </TooltipProvider>
   </QueryClientProvider>
 );
 
 export default App;
+
